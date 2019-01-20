@@ -1,7 +1,8 @@
 LeetCode39. 组合总和
 =====
-#自己写的解法，29ms<br>
-`
+自己写的解法，29ms
+#
+```
 class Solution {
     private List<List<Integer>> res=new ArrayList<>();
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
@@ -28,10 +29,11 @@ class Solution {
         return;
     }
 }
-`
-<br>
-#排名第一9ms的解法<br>
-`
+```
+
+排名第一9ms的解法
+#
+```
 class Solution {
     private void search(int[] candidates, int target, int[] count, List<List<Integer>> res, int n) {
         if(target == 0) {
@@ -53,4 +55,4 @@ class Solution {
         count[n]--;
     }
     
-`
+```
